@@ -16,6 +16,9 @@ pushµÄ¸ñÊ½ÊÇgit push <Ô¶³ÌÖ÷»úÃû> <Ô´·ÖÖ§µØÖ·>:<Ä¿µÄ·ÖÖ§µØÖ·>£¬Èç¹ûÔ´·ÖÖ§ÓëÄ¿µÄ·
 & git remote add origin +¿âÍøÖ·   : Ìí¼ÓÔ¶³Ì¿â,Ãû×ÖÎªorigin
 & git remote add teamone +¿âÍøÖ·  : Ìí¼ÓÔ¶³Ì¿â£¬Ãû×ÖÎªteamone
 & git branch -a  £º ²é¿´Ô¶³Ì·ÖÖ§
+& git remote :²é¿´Ô¶³Ì¿â
+& git rmeote -v £º²é¿´Ô¶³Ì¿â¿ËÂ¡µØÖ·£¬±ÈÉÏÃæÊµÓÃ
+& git remote rm origin :É¾³ıÔ­À´µÄÔ¶³Ì¿â
 
 µ±Ô¶³Ì´úÂë±»ËûÈË¸üĞÂÒÔºó£¬×Ô¼ºµÄorigin/master·ÖÖ§Ã»ÓĞËæÖ®ÒÆ¶¯£¬ËùÒÔĞèÒªfetch
 & git fetch origin £º ×Ô¶¯»ñÈ¡Ô¶³Ì·şÎñÆ÷µÄ¡°ĞÂ¼ÓÈëµÄ·ÖÖ§¡±
