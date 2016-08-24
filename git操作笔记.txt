@@ -17,14 +17,16 @@ pushµÄ¸ñÊ½ÊÇgit push <Ô¶³ÌÖ÷»úÃû> <Ô´·ÖÖ§µØÖ·>:<Ä¿µÄ·ÖÖ§µØÖ·>£¬Èç¹ûÔ´·ÖÖ§ÓëÄ¿µÄ·
 & git remote add teamone +¿âÍøÖ·  : Ìí¼ÓÔ¶³Ì¿â£¬Ãû×ÖÎªteamone
 & git branch -a  £º ²é¿´Ô¶³Ì·ÖÖ§
 & git remote :²é¿´Ô¶³Ì¿â
-& git rmeote -v £º²é¿´Ô¶³Ì¿â¿ËÂ¡µØÖ·£¬±ÈÉÏÃæÊµÓÃ
+& git remote -v £º²é¿´Ô¶³Ì¿â¿ËÂ¡µØÖ·£¬±ÈÉÏÃæÊµÓÃ
 & git remote rm origin :É¾³ıÔ­À´µÄÔ¶³Ì¿â
+& git remote show origin :²é¿´Ô¶³Ì·ÖÖ§
 
 µ±Ô¶³Ì´úÂë±»ËûÈË¸üĞÂÒÔºó£¬×Ô¼ºµÄorigin/master·ÖÖ§Ã»ÓĞËæÖ®ÒÆ¶¯£¬ËùÒÔĞèÒªfetch
 & git fetch origin £º ×Ô¶¯»ñÈ¡Ô¶³Ì·şÎñÆ÷µÄ¡°ĞÂ¼ÓÈëµÄ·ÖÖ§¡±
 & git fetch teamone £º, Git fetches no data but sets a remote-tracking branch called teamone/master to point to the commit that teamone has as its master branch.
 & git fetch origin master: ´ÓÔ¶³ÌµÄorigin²Ö¿âµÄmaster·ÖÖ§ÏÂÔØ´úÂëµ½±¾µØµÄorigin master
 & git fetch origin master:temp:´ÓÔ¶³ÌµÄorigin²Ö¿âµÄmaster·ÖÖ§ÏÂÔØµ½±¾µØ²¢ĞÂ½¨Ò»¸ö·ÖÖ§temp£¨Èç¹û±¾µØ´æÔÚtemp£¬²¢ÇÒÊÇ`fast forward', Ôò×Ô¶¯ºÏ²¢Á½¸ö·ÖÖ§, ·ñÔò, »á×èÖ¹ÒÔÉÏ²Ù×÷.£©
+& git fetch <Ô¶³ÌÖ÷»úÃû><Ô´·ÖÖ§µØÖ·>:<Ä¿µÄ·ÖÖ§µØÖ·>
 $ git fetch diff temp : ±È½Ïmaster·ÖÖ§ºÍtemp·ÖÖ§µÄ²»Í¬
 & git merge temp £ººÏ²¢temp·ÖÖ§µ½master·ÖÖ§
 
@@ -33,3 +35,12 @@ $ git fetch diff temp : ±È½Ïmaster·ÖÖ§ºÍtemp·ÖÖ§µÄ²»Í¬
 & git merge origin/develop  £º½«µ±Ç°¹¤×÷·ÖÖ§ÓëÔ¶³ÌµÄorigin/developºÏ²¢
 
 & git push [Ô¶³ÌÃû] :[·ÖÖ§Ãû]   Èç git push origin :develop   É¾³ıÔ¶³Ì·ÖÖ§£¨Ò»¸ö·Ç³£ÎŞÀåÍ·µÄ·½·¨£©
+
+
+pullµÄÊÇ´ÓÔ¶³ÌÀ­µ½±¾µØ£¬Ô´·ÖÖ§Ó¦ÊÇÔ¶³Ì·ÖÖ§£¬Ä¿µÄ·ÖÖ§ÊÇ±¾µØ·ÖÖ§¡£
+
+$ git pull <Ô¶³ÌÖ÷»úÃû> <Ô´·ÖÖ§µØÖ·>:<Ä¿µÄ·ÖÖ§µØÖ·>  °ÑÌØ¶¨µÄÔ¶³Ì·ÖÖ§ºÍÌØ¶¨µÄ±¾µØ·ÖÖ§ºÏ²¢
+$ git pull <Ô¶³ÌÖ÷»úÃû> <Ô´·ÖÖ§µØÖ·>  °ÑÌØ¶¨µÄ±¾µØ·ÖÖ§ºÍµ±Ç°·ÖÖ§ºÏ²¢
+$ git pull <Ô¶³ÌÖ÷»úÃû> °ÑÓëµ±Ç°·ÖÖ§¹ØÁªµÄÔ¶³Ì·ÖÖ§ºÏ²¢½øµ±Ç°·ÖÖ§ 
+$ git pull  Ô¶³ÌÖ÷»úÎ¨Ò»Ê±ÕâÃ´Ğ´¾Í¿ÉÒÔ°Ñµ±Ç°·ÖÖ§ºÍÎ¨Ò»µÄ¹ØÁªµÄÔ¶³Ì·ÖÖ§ºÏ²¢
+  
