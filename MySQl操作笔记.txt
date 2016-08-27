@@ -1,0 +1,2 @@
+mysql -h 主机地址 -u用户名 -p用户密码
+mysql -uroot -pydrs.sql.7234
