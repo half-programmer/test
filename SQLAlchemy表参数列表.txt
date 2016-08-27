@@ -1,0 +1,9 @@
+1.Column('id', INTEGER, primary_key=True),
+2.Column('col1', VARCHAR(200, collation='binary'))
+3.实现主键自增：SQLAlchemy1.0需要autoincrement,1.1版本所有主键默认为自增。注意不能写autoincrement在1.1中，否则默认为： The autoincrement flag now defaults to "auto" which indicates autoincrement semantics by default for single-column integer primary keys only; for composite (multi-column) primary keys, autoincrement is never implicitly enabled; as always, autoincrement=True will allow for at most one of those columns to be an “autoincrement” column. autoincrement=True may also be set on a Column that has an explicit client-side or server-side default, subject to limitations of the backend database and dialect.
+如果此主键还是别的表的外键，那么只有在autoincrement='ignore_fk'时，自增才能生效
+4.default="默认"
+ColumnDefault:ColumnDefault is generated automatically whenever the default, onupdate arguments of Column are used. A ColumnDefault can be passed positionally as well.   Column('foo', Integer, ColumnDefault(50))
+
+
+参考：http://docs.sqlalchemy.org/en/latest/core/metadata.html?highlight=autoin#column-table-metadata-api
